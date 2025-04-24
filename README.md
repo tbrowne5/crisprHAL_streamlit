@@ -4,4 +4,4 @@
 
 • The source repository is: [github.com/tbrowne5/crisprHAL](https://github.com/tbrowne5/crisprHAL)
 
-• This program uses Python 3.10 and Tensorflow 2.10.0
+• This program uses Python 3.10 and Tensorflow 2.15.1
