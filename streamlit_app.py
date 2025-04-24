@@ -122,7 +122,7 @@ def generate_plot(preds, modelname):
     ax2.axvspan(1.5, 2.5, color='#1D9677', alpha=backgroundalpha)     # Coloring the background from 1 to 2
     ax2.axvspan(2.5, 3.5, color='#1B847D', alpha=backgroundalpha)   # Coloring the background from 2 to 3
     
-    #sns.set(rc={'axes.facecolor':'white', 'figure.facecolor':'white'})
+    # Update to sns.histplot preventing the error occuring when only one sgRNA is tested (turns off KDE plotting)
     use_kde = len(data) > 1
     if not use_kde:
         st.warning("Only one sgRNA prediction available ⇒ KDE disabled.")
@@ -142,11 +142,6 @@ def generate_plot(preds, modelname):
     ax2.set_title('How to interpret the ' + str(modelname) + ' model predictions')
     ax2.set_xlabel('Predicted activity scores')
     ax2.set_ylabel('Density')
-    #params = {"ytick.color" : "w",
-    #      "xtick.color" : "w",
-    #      "axes.labelcolor" : "w",
-    #      "axes.edgecolor" : "w"}
-    #plt.rcParams.update(params)
     
     ax2.xaxis.label.set_color('white')
     ax2.yaxis.label.set_color('white')
