@@ -164,7 +164,7 @@ def generate_plot(preds, modelname):
     plt.close()
 
     # Display the plot
-    col1.image("seaborn_plot.png", use_column_width=True)
+    col1.image("seaborn_plot.png", use_container_width=True)
     #st.pyplot(fig2)
 
 st.title('crisprHAL')
