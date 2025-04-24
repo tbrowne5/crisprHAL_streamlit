@@ -203,9 +203,10 @@ crisprHAL2tevspcas9datasource = """
 Training Data:<br>• <i>Citrobacter rodentium, TevSpCas9</i>
 """
 
-if option == 'TevSpCas9':
+if option == 'TevSpCas9 (Recommended)':
     st.sidebar.title('TevSpCas9 Model')
     st.sidebar.write('Enzyme: TevSpCas9')
+    st.sidebar.write('Use: TevSpCas9 & SpCas9')
     st.sidebar.write('Model: crisprHAL')
     st.sidebar.markdown(crisprHALsource, unsafe_allow_html=True)
     st.sidebar.markdown(guoespcas9datasource, unsafe_allow_html=True)
@@ -213,13 +214,15 @@ if option == 'TevSpCas9':
 elif option == 'SpCas9':
     st.sidebar.title('SpCas9 Model')
     st.sidebar.write('Enzyme: SpCas9')
+    st.sidebar.write('Use: TevSpCas9 & SpCas9')
     st.sidebar.write('Model: crisprHAL')
     st.sidebar.markdown(crisprHALsource, unsafe_allow_html=True)
     st.sidebar.markdown(guoespcas9datasource, unsafe_allow_html=True)
     st.sidebar.markdown(crisprHALspcas9datasource, unsafe_allow_html=True)
-elif option == 'Citrobacter TevSpCas9':
+elif option == 'C. rodentium TevSpCas9':
     st.sidebar.title('Citro. TevSpCas9 Model')
     st.sidebar.write('Enzyme: TevSpCas9')
+    st.sidebar.write('Use: TevSpCas9 & SpCas9')
     st.sidebar.write('Model: crisprHAL 2.0')
     st.sidebar.markdown(crisprHAL2tevspcas9datasource, unsafe_allow_html=True)
     st.sidebar.write('Note: crisprHAL 2.0 is still in development')
