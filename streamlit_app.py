@@ -214,12 +214,12 @@ if option == 'TevSpCas9':
 elif option == 'SpCas9':
     st.sidebar.title('SpCas9 Model')
     st.sidebar.write('Enzyme: SpCas9')
-    st.sidebar.write('Use: TevSpCas9 & SpCas9')
+    st.sidebar.write('Use: SpCas9')
     st.sidebar.write('Model: crisprHAL')
     st.sidebar.markdown(crisprHALsource, unsafe_allow_html=True)
     st.sidebar.markdown(guoespcas9datasource, unsafe_allow_html=True)
     st.sidebar.markdown(crisprHALspcas9datasource, unsafe_allow_html=True)
-elif option == 'C. rodentium TevSpCas9':
+elif option == 'Citrobacter TevSpCas9':
     st.sidebar.title('Citro. TevSpCas9 Model')
     st.sidebar.write('Enzyme: TevSpCas9')
     st.sidebar.write('Use: TevSpCas9 & SpCas9')
