@@ -203,7 +203,7 @@ crisprHAL2tevspcas9datasource = """
 Training Data:<br>• <i>Citrobacter rodentium, TevSpCas9</i>
 """
 
-if option == 'TevSpCas9 (Recommended)':
+if option == 'TevSpCas9':
     st.sidebar.title('TevSpCas9 Model')
     st.sidebar.write('Enzyme: TevSpCas9')
     st.sidebar.write('Use: TevSpCas9 & SpCas9')
