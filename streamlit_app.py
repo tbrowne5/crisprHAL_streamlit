@@ -123,7 +123,11 @@ def generate_plot(preds, modelname):
     ax2.axvspan(2.5, 3.5, color='#1B847D', alpha=backgroundalpha)   # Coloring the background from 2 to 3
     
     #sns.set(rc={'axes.facecolor':'white', 'figure.facecolor':'white'})
-    sns.histplot(data, kde=True, color='black', ax=ax2)
+    use_kde = len(data) > 1
+    if not use_kde:
+        st.warning("Only one sgRNA prediction available ⇒ KDE disabled.")
+    sns.histplot(data, kde=use_kde, color='black', ax=ax2)
+    
     labels = ["Rare","Very Low","Low","Moderate","High","Very High","Rare"]
     for i in range(0,7):
         ax2.annotate(labels[i], xy=(((i)/7)+(1/14), 0.915), xycoords='axes fraction', xytext=(0, 10), 
@@ -138,7 +142,6 @@ def generate_plot(preds, modelname):
     ax2.set_title('How to interpret the ' + str(modelname) + ' model predictions')
     ax2.set_xlabel('Predicted activity scores')
     ax2.set_ylabel('Density')
-    
     #params = {"ytick.color" : "w",
     #      "xtick.color" : "w",
     #      "axes.labelcolor" : "w",
