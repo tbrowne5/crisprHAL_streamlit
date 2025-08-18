@@ -13,8 +13,8 @@
 * [crisprHAL SaCas9 pre-print](https://www.biorxiv.org/content/10.1101/2025.08.13.670096v1)
 * [crisprHAL SpCas9 paper repository](https://github.com/tbrowne5/A-generalizable-Cas9-sgRNA-prediction-model-using-machine-transfer-learning)
 * [crisprHAL SpCas9 publication](https://doi.org/10.1038/s41467-023-41143-7)
-  
-• This program uses Python 3.10 and Tensorflow 2.15.1
+
+This program uses Python 3.10 and Tensorflow 2.15.1
 
 ## How to cite crisprHAL
 
