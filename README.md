@@ -1,4 +1,4 @@
-## crisprHAL — Repository for the Original Streamlit App
+# crisprHAL — Repository for the Original Streamlit App
 
 <p align="center">
   <img src="https://github.com/tbrowne5/crisprHAL/blob/main/data/crisprHAL_Logo.png" width="600">
